@@ -1,0 +1,99 @@
+/*  We will style the HTML together by copying and pasting suggestions posted in the TopHat forum. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For the second part of the lesson on the box model */
+/* Let's look at the diagram on: https://www.codecademy.com/resources/docs/css/box-model */
+/*  <div class="box"> */
+
+.box {
+  /* Content */
+  width: 50%; /* Set the width of the content area to 50% of its containing block */
+  height: 200px; /* Set the height of the content area to 200 pixels */
+  padding-top: 30px; /* Add padding only to the top of the content area */
+  padding-left: 20px; /* Add padding to the left of the content area */
+  padding-right: 10%; /* Add padding to the right of the content area as a percentage */
+  padding-bottom: 1cm; /* Add padding to the bottom of the content area as centimeters */
+
+  /* Border */
+  border: 5px solid #333; /* Add a solid border around the padding */
+
+  /* Margin */
+  margin: 20px auto; /* Add margin above and below the element, with automatic left and right margins (i.e., will automatically center it) */
+
+  /* Display and positioning */
+  display: inline-block; /* Make the div behave like an inline element */
+
+  /* Background */
+  background-color: #f0f0f0; /* Set a background color for the div */
+  color: #333; /* Set the text color */
+}
+
+
+
+/* Flex Box */
+
+
+.nav-list ul {
+  display: flex; /* Use flexbox */
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+
+.nav-list li {
+  margin-right: 20px; /* Add margin between list items */
+}
+
+
+.nav-list a:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: row; /* can also be column, which is the default */
+    justify-content: space-evenly;
+    flex-wrap: wrap; /*  if content starts squeezing together, it will default to a new line */
+    align-content: center; /* try also:  */
+    /*gap: 20em;*/
+}
+
+article { 
+
+    padding: 3px;
+    max-width: 300px; /* Set a minimum width for each flex item */
+
+}
+
+
+/* And you can give different properties to elements *within* the flexbox container */
+
+.article3 {
+    
+    flex-shrink: 5;
+   }
+   
+   
+.nav-list {
+    display: flex;
+}
+
