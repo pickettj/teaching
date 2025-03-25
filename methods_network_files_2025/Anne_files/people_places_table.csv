@@ -1,0 +1,13 @@
+﻿person name,year,place,source,page,person_id,place_id
+John von Neumann,1930,Princeton,"William Poundstone -- ""Prisoner's Dillema""",17,1,PRI
+John von Neumann,1926,Göttingen,"William Poundstone -- ""Prisoner's Dillema""",16,1,GOT
+John von Neumann,1927,Göttingen,"William Poundstone -- ""Prisoner's Dillema""",16,1,GOT
+David Hilbert,1926,Göttingen,"William Poundstone -- ""Prisoner's Dillema""",16,2,GOT
+John von Neumann,1931,Princeton,"William Poundstone -- ""Prisoner's Dillema""",17,1,PRI
+John von Neumann,1932,Princeton,"William Poundstone -- ""Prisoner's Dillema""",17,1,PRI
+John von Neumann,1933,Princeton,"William Poundstone -- ""Prisoner's Dillema""",17,1,PRI
+David Hilbert,1927,Göttingen,"William Poundstone -- ""Prisoner's Dillema""",16,2,GOT
+David Hilbert,1917,Göttingen,"Zach, Richard, ""Hilbert’s Program"", The Stanford Encyclopedia of Philosophy (Winter 2023 Edition), Edward N. Zalta & Uri Nodelman (eds.), URL = <https://plato.stanford.edu/archives/win2023/entries/hilbert-program/>.",n/a,2,GOT
+Einstein,1935,Princeton,Historical Society of Princeton -- https://princetonhistory.org/research/historic-princeton/albert-einstein/,n/a,4,PRI
+Podolski,1935,Princeton,EPR paper,1,5,PRI
+Rosen,1935,Princeton,EPR paper,1,6,PRI

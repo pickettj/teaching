@@ -1,0 +1,6 @@
+﻿source,target,type,label
+3,4,undirected,"PRI, 1935"
+3,5,undirected,"PRI, 1935"
+4,5,undirected,"PRI, 1935"
+1,2,undirected,"GOT, 1926"
+1,2,undirected,"GOT, 1927"
