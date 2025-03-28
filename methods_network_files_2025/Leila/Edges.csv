@@ -1,0 +1,19 @@
+UID,Relationship_Type,Source,Target
+1,father_son,1,16
+2,father_daughter,1,9
+3,husband_wife,1,2
+4,grandparent_grandchild,4,9
+5,mother_son,5,1
+6,mother_daughter,2,9
+7,colleagues,1,24
+8,siblings,2,7
+9,half_siblings,9,19
+10,father_in_law_son_in_law,4,1
+11,father_in_law_daugther_in_law,37,2
+12,concubines,1,30
+13,master_servant,1,6
+14,mother_in_law_son_in_law,3,1
+15,mother_in_law_daughter_in_law,5,2
+16,friend,1,39
+17,political ally,1,23
+18,political rival,1,40
