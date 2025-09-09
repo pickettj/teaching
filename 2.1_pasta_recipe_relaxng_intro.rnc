@@ -1,0 +1,53 @@
+# Pasta Exercise
+
+# starting procedures:
+    # students open pasta XML recipe directly from the URL: ctrl u, then paste the web address (linked on the syllabus)
+        # http://dh.obdurodon.org/recipe_djb.xml
+    # open up a split screen on oXygen (from the Window menu)
+    # create a new document; select Relax NG Schema Compact (NOT an XML document)
+    # erase the starting boilerplate: datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes", element test { xsd:double }
+
+
+# Root Element:
+start = recipe 
+    # "what is a 'recipe', the computer wonders: let's tell it:
+# recipe = element recipe { text }
+    # simplest way to get a valid Relax NG is to start by defining something as text (a reserved word that doesn't need to be defined).
+    # but in fact a recipe is more than just text; the root element recipe also contains other elements (and attributes)
+
+# Modeling the root <recipe> element:
+recipe = element recipe { meta, ingredients, procedure }
+    # at first, this will give us the red box of doom, because we have yet to define these elements 
+    # important: this is also telling us that there can only be *one* of each of those elements - which as far as we know is fine
+
+
+# The <meta> element:
+    # first just list everything: meta = element meta {title, time, serves, p}
+    # but we you don’t always need the explanatory paragraph, so <p> gets a `?`
+    # and <time> occurs multiple times, and so needs a +
+meta = element meta {title, time+, serves, p?}
+    title = element title {text}
+        # again, text is a reserved term: RelaxNG already knows what it means, which is why it turns blue in oXygen
+    time = element time {type, text}
+        type = attribute type {"prep" | "cook" | "wait"}
+            # The | “pipe” is an “or” connector.
+    p = element p { text }
+    # note that indenting does not affect code processing for RelaxNG; so we can use it to keep things organized.
+
+
+# The <serves> element:
+serves = element serves { text }
+
+# The <ingredients> element:
+ingredients = element ingredients { ingredient+, text }
+    ingredient = element ingredient { ing_type, text }
+        # we already have a type attribute for <time>; but the ingredient type is distinct, it just happens to use the same name
+        ing_type = attribute type {"starch" | "spice" | "liquid" | "herb" | "dairy" }
+        
+
+# The <procedure> element:
+procedure = element procedure { step+, text }
+    step = element step { text }
+
+# alternate <procedure> declaration:
+# procedure = element procedure { step+, text, ingredient* }
